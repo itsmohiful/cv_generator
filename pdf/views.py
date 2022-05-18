@@ -1,10 +1,12 @@
-from django.shortcuts import render
-from .models import Profile
-import pdfkit 
-from django.http import HttpResponse, response
-from django.template import loader
 import io
+import os
 
+import pdfkit
+from django.http import HttpResponse, response
+from django.shortcuts import render
+from django.template import loader
+
+from .models import Profile
 
 
 def accept(request):
